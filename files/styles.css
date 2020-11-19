@@ -18,11 +18,14 @@ body {
 	border-radius: 20px;
 }
 
-/* ======================================= */
+/* ===============
+    ILLUSTRATIONS
+   =============== */
 
 .illustration-div {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	position:absolute;
 	top: -7rem;
 	width: 100%;
@@ -42,7 +45,13 @@ body {
 	bottom: -0.7rem;
 }
 
-/* ======================================= */
+.illustration-box {
+	display: none;
+}
+
+/* ============
+       FAQ
+   ============ */
 
 .faq-container {
 	width: 90%;
@@ -57,7 +66,7 @@ body {
 
 .accordion-container {
 	border-bottom: 1px solid #B6B6B6;
-    	padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .question-container {
@@ -75,12 +84,20 @@ body {
 	padding: 1rem 0.2rem 1rem 0;
 }
 
+	.question-button:hover {
+		color: #DB5D00;
+	}
+
+.question-button.bold {
+	font-weight: bolder;
+}
+
 .fas {
 	pointer-events: none;
 	position: absolute;
 	right: -5px;
 	color: #DB5D00;
-    	transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .answer-container {
@@ -90,7 +107,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.active {
+.answer-container.active {
     max-height: 5rem;
 }
 
@@ -102,6 +119,8 @@ body {
 @media screen and (min-width: 968px) {
 	body {
 		padding: 0rem 0;
+		background: rgb(97,94,227);
+		background: linear-gradient(0deg, rgba(97,94,227,1) 16%, rgba(175,104,234,1) 85%);
 	}
 
 	.main-container {
@@ -111,6 +130,8 @@ body {
 		display: flex;
 		max-height: 50vh;
 	}
+
+
 
 	.illustration-div {
 		display: flex;
@@ -137,9 +158,17 @@ body {
 
 	.illustration-pattern-d {
 		position: absolute;
-		transform: translateY(1rem);
-		height: 70%;
+		height: 80%;
 	}
+
+	.illustration-box {
+		display: inline;
+		position: absolute;
+		left: -4rem;
+		bottom: 8rem;
+	}
+
+
 
 	.faq-container {
 		width: 50%;
