@@ -1,0 +1,158 @@
+body {
+	min-height: 100vh;
+	font-family: sans-serif;
+	padding: 10rem 0 5rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgb(123,100,230);
+	background: linear-gradient(0deg, rgba(123,100,230,1) 0%, rgba(175,104,234,1) 86%);
+}
+
+.main-container {
+	position: relative;
+	width: 90%;
+	min-height: 34rem;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+
+
+.illustration-div {
+	display: flex;
+	justify-content: center;
+	position:absolute;
+	top: -7rem;
+	width: 100%;
+}
+
+.illustration-woman-d, .illustration-pattern-d {
+	display: none;
+}
+
+.illustration-woman-m {
+	position: relative;
+	right: 1rem;
+}
+
+.illustration-pattern-m {
+	position: absolute;
+	bottom: -0.7rem;
+}
+
+
+
+.faq-container {
+	width: 90%;
+	display: block;
+	position: relative;
+	margin: 7rem auto 2rem auto;
+}
+
+.main-title {
+	text-align: center;
+}
+
+.accordion-container {
+	border-bottom: 1px solid #B6B6B6;
+    padding: 0.5rem 0;
+}
+
+.question-container {
+	display: flex;
+	align-items: center;
+}
+
+.question-button {
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	font-size: 1em;
+	text-align: left;
+	padding: 1rem 0.2rem 1rem 0;
+}
+
+.fas {
+	pointer-events: none;
+	position: absolute;
+	right: -5px;
+	color: #DB5D00;
+    transition: all 0.3s ease;
+}
+
+.answer-container {
+    max-height: 0;
+    overflow: hidden;
+    color: #656161;
+    transition: all 0.3s ease;
+}
+
+.active {
+    max-height: 5rem;
+}
+
+.attribution {
+    margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 968px) {
+	body {
+		padding: 0rem 0;
+	}
+
+	.main-container {
+		padding: 0 2rem;
+		position: relative;
+		width: 70%;
+		display: flex;
+		max-height: 50vh;
+	}
+
+	.illustration-div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 0;
+		right: 5rem;
+		width: 40%;
+	}
+
+	.illustration-woman-m, .illustration-pattern-m {
+		display: none;
+	}
+
+	.illustration-woman-d, .illustration-pattern-d {
+		display: inline;
+		width: 120%;
+	}	
+
+	.illustration-woman-d {
+		height: 60%;
+	}
+
+	.illustration-pattern-d {
+		position: absolute;
+		transform: translateY(1rem);
+		height: 70%;
+	}
+
+	.faq-container {
+		width: 50%;
+		display: block;
+		position: relative;
+		margin: 4rem auto;
+	}
+
+	.main-title {
+		text-align: left;
+	}
+
+	.fas {
+		right: 20px;
+	}
+}
