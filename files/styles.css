@@ -18,7 +18,7 @@ body {
 	border-radius: 20px;
 }
 
-
+/* ======================================= */
 
 .illustration-div {
 	display: flex;
@@ -42,7 +42,7 @@ body {
 	bottom: -0.7rem;
 }
 
-
+/* ======================================= */
 
 .faq-container {
 	width: 90%;
@@ -57,7 +57,7 @@ body {
 
 .accordion-container {
 	border-bottom: 1px solid #B6B6B6;
-    padding: 0.5rem 0;
+    	padding: 0.5rem 0;
 }
 
 .question-container {
@@ -80,7 +80,7 @@ body {
 	position: absolute;
 	right: -5px;
 	color: #DB5D00;
-    transition: all 0.3s ease;
+    	transition: all 0.3s ease;
 }
 
 .answer-container {
