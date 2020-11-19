@@ -1,5 +1,8 @@
+//This is the div that contains the button and the icon!
 const questionContainer = document.querySelectorAll(".question-container");
+//This is the div that contains the p element!
 const answerContainer = document.querySelectorAll(".answer-container");
+//This is the icons that i use from Font awesome!
 const icons = document.querySelectorAll(".fas");
 
 questionContainer.forEach((item, index) => {
