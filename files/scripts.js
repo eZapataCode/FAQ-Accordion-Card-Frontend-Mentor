@@ -1,5 +1,7 @@
 //This is the div that contains the button and the icon!
 const questionContainer = document.querySelectorAll(".question-container");
+//This const contains the buttons to drop the answers
+const questionButtons = document.querySelectorAll(".question-button");
 //This is the div that contains the p element!
 const answerContainer = document.querySelectorAll(".answer-container");
 //This is the icons that i use from Font awesome!
@@ -11,13 +13,15 @@ questionContainer.forEach((item, index) => {
     });
 });
 
-function openAccordion(index) {
+function openAccordion(index1) {
     
-    answerContainer.forEach(item => {
-       if (item === answerContainer[index]) {
+    answerContainer.forEach((item, index2) => {
+       if (item === answerContainer[index1]) {
            item.classList.toggle("active");
+           questionButtons[index2].classList.toggle("bold");
        } else {
            item.classList.remove("active");
+           questionButtons[index2].classList.remove("bold");
        };
     });
 };
