@@ -19,9 +19,11 @@ function openAccordion(index1) {
        if (item === answerContainer[index1]) {
            item.classList.toggle("active");
            questionButtons[index2].classList.toggle("bold");
+           icons[index2].classList.toggle("fa-angle-up");
        } else {
            item.classList.remove("active");
            questionButtons[index2].classList.remove("bold");
+           icons[index2].classList.remove("fa-angle-up");
        };
     });
 };
