@@ -157,11 +157,14 @@ body {
 
 	.illustration-woman-d {
 		transform: translateX(-2.5rem);
+		width: 
 	}
 
 	.illustration-pattern-d {
+		border: 1px solid red;
 		position: absolute;
-		height: 80%;
+		right: 0;
+		bottom: -8rem;
 	}
 
 	.illustration-box {
