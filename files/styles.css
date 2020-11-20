@@ -86,6 +86,7 @@ body {
 	color: hsl(237, 12%, 33%);
 	text-align: left;
 	padding: 1rem 0.2rem 1rem 0;
+	cursor: pointer;
 }
 
 .question-button.bold {
@@ -131,6 +132,7 @@ body {
 		padding: 0;
 		position: relative;
 		width: 70%;
+		max-width: 980px;
 		display: flex;
 		max-height: 45vh;
 	}
@@ -144,6 +146,8 @@ body {
 		position: relative;
 		top: 0;
 		width: 40%;
+		background-image: url(images/bg-pattern-desktop.svg);
+		background-position: right;
 		overflow: hidden;
 	}
 
@@ -151,19 +155,14 @@ body {
 		display: none;
 	}
 
-	.illustration-woman-d, .illustration-pattern-d {
+	.illustration-woman-d{
 		display: inline;
+	}
 	}	
 
 	.illustration-woman-d {
 		transform: translateX(-2.5rem);
 		width: 
-	}
-
-	.illustration-pattern-d {
-		position: absolute;
-		right: 0;
-		bottom: -8rem;
 	}
 
 	.illustration-box {
@@ -177,6 +176,7 @@ body {
 
 	.faq-container {
 		width: 50%;
+		max-width: 450px;
 		display: block;
 		position: relative;
 		margin: 4rem auto;
